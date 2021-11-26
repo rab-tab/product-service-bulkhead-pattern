@@ -1,0 +1,9 @@
+server:
+  tomcat:
+    threads:
+      max: 15
+resilience4j.bulkhead:
+  instances:
+    ratingService:
+      maxConcurrentCalls: 10
+      maxWaitDuration: 10ms
